@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!--<html lang="en" class="no-js">--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>JUSP</title>
+        
+<!-- Matomo -->
+<script async="" src="jusp_files/matomo.js"></script><script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://live.matomo.jisc.ac.uk/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '38']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://live.matomo.jisc.ac.uk/matomo.php?idsite=38&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="jusp_files/jisc-banner.css" rel="stylesheet">
+<link href="jusp_files/bootstrap.min.css" rel="stylesheet">
+<link href="jusp_files/bootstrap-theme.min.css" rel="stylesheet">
+<link href="jusp_files/main.css" rel="stylesheet">
+<link href="jusp_files/css.css" rel="stylesheet" type="text/css">
+<link href="jusp_files/font-awesome.css" rel="stylesheet">
+<link href="jusp_files/select2.min.css" rel="stylesheet">
+
+<script src="jusp_files/modernizr.custom-2.7.1.js"></script>
+<script src="jusp_files/jquery.min.js"></script>
+<script src="jusp_files/select2.min.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    </head>
+  
+    <body id="top">
+        <!--[if lt IE 7]>
+          <p class="browsehappy bg-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="header" role="banner">
+  <p class="skip-link"><a href="#content" class="visuallyhidden focusable">Skip to main content</a></p>
+
+  <div class="c-jisc-banner">
+    <div class="o-layout__container">
+      <div class="c-jisc-banner__inner">
+
+        <p class="c-jisc-banner__jisc-brand">
+          <a class="c-jisc-logo c-jisc-banner__jisc-logo" href="http://www.jisc.ac.uk/" title="Go to the Jisc homepage">
+            <img class="c-jisc-logo__img c-jisc-logo__img--jisc-banner" src="jusp_files/jisc-logo.svg" alt="Jisc">
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-primary">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <h1 class="navbar-brand-logo">
+          <a href="https://jusp.jisc.ac.uk/" class="navbar-brand"><img src="jusp_files/jusp.png" alt="JUSP"><span class="sr-only">: Journal Usage Statistics Portal</span></a>
+        </h1>
+      </div>
+
+      <div class="collapse navbar-collapse" id="nav-primary">
+        <ul class="nav navbar-nav">
+          <!--#if expr='"$DOCUMENT_URI" = "/about/index.html"' -->
+          <li class="dropdown active">
+          <!--#else -->
+          </li><li class="dropdown">
+          <!--#endif --> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!--#if expr='"$DOCUMENT_URI" = "/about/index.html"' --> 
+              <li class="active"><!--#else --></li><li><!--#endif --><a href="https://jusp.jisc.ac.uk/about/">About</a></li>
+
+              <li class="divider"></li>
+
+              <!--#if expr='"$DOCUMENT_URI" = "/news/index.html"' --> 
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/news/">News</a></li>
+
+              <!--#if expr='"$DOCUMENT_URI" = "/service-description/index.html"' --> 
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/service-description/">Service Description</a></li>
+
+
+              <!--#if expr='"$DOCUMENT_URI" = "/papers-presentations/index.html"' --> 
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/papers-presentations/">Presentations and publications</a></li>
+
+            </ul>
+          </li>
+
+          <!--#if expr='"$DOCUMENT_URI" = "/engagement/index.html"' -->
+          <li class="dropdown active"> <!--#else --></li><li class="dropdown"><!--#endif-->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engagement <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!--#if expr='"$DOCUMENT_URI" = "/user-group/index.html"' -->
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/user-group/">User Group</a></li>
+            </ul>
+          </li>
+          
+          <!--#if expr='"$DOCUMENT_URI" = "/participants/index.html"' --> 
+          <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/participants/">Participants</a></li>
+
+          
+          <!--#if expr='"$DOCUMENT_URI" = "/join/"' --><li class="dropdown active"> <!--#else --></li><li class="dropdown"><!--#endif --> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <!--#if expr='"$DOCUMENT_URI" = "/join/index.html"' -->
+            <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/join/">Join JUSP</a></li>
+
+            <li class="divider"></li>
+
+            <!--#if expr='"$DOCUMENT_URI" = "/join/uk-academic-libraries/index.html"' --><li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/join/uk-academic-libraries/">Join JUSP for UK academic libraries</a></li>
+
+            <!--#if expr='"$DOCUMENT_URI" = "/join/publishers/index.html"' --> <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/join/publishers/">Join JUSP for Publishers</a></li>
+          </ul>
+
+                  </li></ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          
+          <li class="highlighted"><a href="https://jusp.jisc.ac.uk/login/">Portal <span class="glyphicon glyphicon-log-in"></span></a></li>
+
+          
+          <!--#if expr='"$DOCUMENT_URI" = "/support/index.html"' -->
+          <li class="dropdown active"> <!--#else --></li><li class="dropdown"><!--#endif-->
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <!--#if expr='"$DOCUMENT_URI" = "/guides/index.html"' -->
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/guides/">Guides</a></li>
+
+              <!--#if expr='"$DOCUMENT_URI" = "/use-cases/index.html"' -->
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/use-cases/">Use Cases</a></li>
+
+              <!--#if expr='"$DOCUMENT_URI" = "/case-studies/index.html"' -->
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/case-studies/">Case Studies</a></li>
+
+             <!--#if expr='"$DOCUMENT_URI" = "/events-training/index.html"' -->
+            <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/events-training/">Events &amp; Training</a></li>
+
+
+              <!--#if expr='"$DOCUMENT_URI" = "/faq/index.html"' -->
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/faq/"><abbr title="Frequently Asked Questions" class="abbr-unstyled">FAQ</abbr></a></li>
+
+              <!--#if expr='"$DOCUMENT_URI" = "/glossary/index.html"' -->
+              <li class="active"><!--#else --></li><li><!--#endif --><!--#endif --><a href="https://jusp.jisc.ac.uk/glossary/">Glossary</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+        <article id="content" role="main">
+            <section class="content home-primary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+                            <p class="img-featured text-center"><img src="jusp_files/home-laptop.png" alt="Screenshot of JUSP home page" class="img-responsive"></p>
+                        </div>
+
+                        <div class="col-md-6 col-md-pull-6">
+                            <h1>Journal Usage Statistics Portal</h1>
+
+                            <p class="lead">JUSP gives librarians a 
+simple way of analysing the value and impact of their electronic
+                            journals, books and databases through 
+accurate and comparable usage statistics. JUSP saves academic libraries 
+time and duplicated effort by providing a single gateway for them to 
+access their usage statistics from participating publishers.</p>
+
+                            <ul class="list-inline home-call-to-action">
+                                <li><a href="https://jusp.jisc.ac.uk/login/" class="btn btn-primary btn-xlg">Access the Portal <span class="glyphicon glyphicon-log-in"></span></a></li>
+                                <li><a href="https://jusp.jisc.ac.uk/about/" class="btn btn-default btn-xlg">Learn more</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content home-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 home-steps-bg-1">
+                            <h2><span class="fa fa-arrow-down glyphicon-xlg"></span> <br>Collect</h2>
+
+                            <p class="lead">Collect <abbr title="Counting Online Usage of NeTworked Electronic Resources" class="initialism">COUNTER</abbr>-compliant usage data and generate usage reports.</p>
+                        </div>
+
+                        <div class="col-sm-4 home-steps-bg-2">
+                            <h2><span class="fa fa-eye glyphicon-xlg"></span> <br>Analyse</h2>
+
+                            <p class="lead">Track titles with high usage, analyse trends over time and export your data for more detailed analysis.</p>
+                        </div>
+
+                        <div class="col-sm-4 home-steps-bg-3">
+                            <h2><span class="fa fa-file-text-o glyphicon-xlg"></span> <br>Report</h2>
+
+                            <p class="lead">Complete summary reports for <abbr title="Society of College, National and University Libraries" class="initialism">SCONUL</abbr> returns, monitoring and performance indicators.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content home-tertiary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="h1">What our users say</h2>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <blockquote>
+                                <p><span><span>Statistics gathering would be more of a drudge and I would be an unhappier Librarian. JUSP = Happiness :-)</span></span></p>
+
+                                <div class="arrow-down"></div>
+                                <footer>Loughborough University</footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <blockquote>
+                                <p><span><span>The usage statistics are 
+used to inform important decisions and we really want to be sure we can 
+rely on the accuracy of the data; with JUSP we know we can.</span></span></p>
+
+                                <div class="arrow-down"></div>
+                                <footer>Birkbeck, University of London</footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <blockquote>
+                                <p><span><span>JUSP as a central resource spots discrepancies and so helps make the data more reliable for all users.</span></span></p>
+
+                                <div class="arrow-down"></div>
+                                <footer>The Open University</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer class="footer" role="contentinfo">
+  <nav class="footer-utilities">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="supported-by"><abbr title="Journal Usage Statistics Portal" class="abbr-unstyled">JUSP</abbr> is a <a href="http://jisc.ac.uk/">Jisc</a> service<span class="visuallyhidden">.</span></p>
+
+          <p class="visuallyhidden">Utilities:</p>
+          <ul class="nav nav-pipes nav-utilities nav-xs">
+            <li><a href="mailto:help@jisc.ac.uk?subject=JUSP" title="Email the JUSP Helpdesk"><span class="fa fa-envelope"></span> Helpdesk</a></li>
+
+            <li><a href="https://jusp.jisc.ac.uk/accessibility/">Accessibility</a></li>
+
+            <li><a href="https://jusp.jisc.ac.uk/privacy/">Privacy</a></li>
+
+            <li><a href="https://jusp.jisc.ac.uk/cookies/">Cookies</a></li>
+
+            <li><a href="https://jusp.jisc.ac.uk/site-map/">Site map</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</footer>
+
+<script src="jusp_files/bootstrap.min.js"></script>
+<script src="jusp_files/plugins.js"></script>
+
+    
+
+</body></html>

@@ -1,0 +1,179 @@
+
+/* ==========================================================================
+   # 5. Objects
+   ========================================================================== */
+/* ## Layout (sitewide)
+ * ========================================================================== */
+/**
+ * Usage: Core, generic.
+ *
+ * 1. Sitewide responsive fluid-width container (meaning it's 100% wide all the 
+ *    time).
+ */
+/* html */
+.o-layout__container {
+  /* [1] */
+  padding-right: 0.9rem;
+  padding-left: 0.9rem;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 61.875em) {
+    .o-layout__container {
+      max-width: 99rem; } }
+
+/* ==========================================================================
+   # 6.1 Components: Core
+   ========================================================================== */
+/* ## Jisc banner
+ * ========================================================================== */
+/**
+ * Usage: Core, generic.
+ *
+ * 1. Explicitly set height of component, but note if this was not set the
+ *    height would be determined by the height of the Jisc logo.
+ * 2. Using Ellipses technique to hide the overflow for consistency with the
+ *    Jisc focussed masthead, even though it is very unlikely the content will
+ *    overflow the viewport and require the ellipsis. Otherwise the links have
+ *    a different height from the Jisc focussed masthead when focussed on, as
+ *    top and bottom overflow is hidden.
+ * 3. Required to extend the link outline to the right hand side, as the
+ *    Ellipses mixin stops the link outline being visible on the right hand
+ *    side when the ellipsis is not visible.
+ */
+.c-jisc-banner {
+  color: #fff;
+  background-color: #333333; }
+  .c-jisc-banner:before, .c-jisc-banner:after {
+    content: "";
+    display: table; }
+  .c-jisc-banner:after {
+    clear: both; }
+  @media print {
+    .c-jisc-banner {
+      color: #333333;
+      background-color: transparent; } }
+
+.c-jisc-banner__inner {
+  display: flex;
+  height: 2.7rem;
+  /* [1] */
+  align-items: center; }
+  @media (min-width: 47.3125em) {
+    .c-jisc-banner__inner {
+      height: 3.6rem;
+      /* [1] */ } }
+
+.c-jisc-banner__heading {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* a */
+.c-jisc-banner__link {
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem; }
+  .c-jisc-banner__link:link {
+    color: #fff;
+    text-decoration: none; }
+    @media print {
+      .c-jisc-banner__link:link {
+        color: #007aaa; } }
+  .c-jisc-banner__link:visited {
+    color: #fff; }
+    @media print {
+      .c-jisc-banner__link:visited {
+        color: #007aaa; } }
+  .c-jisc-banner__link:focus {
+    color: #069;
+    text-decoration: none;
+    background-color: #fd6;
+    outline: 0.3rem solid #fd6; }
+  .c-jisc-banner__link:hover {
+    color: #d9d9d9;
+    text-decoration: underline;
+    transition: color 0.2s ease; }
+  .c-jisc-banner__link:focus:hover {
+    color: #069;
+    text-decoration: none;
+    background-color: #fd6;
+    outline: 0.3rem solid #fd6; }
+  .c-jisc-banner__link:active {
+    color: #069;
+    text-decoration: none;
+    background-color: #fd6;
+    outline: 0.3rem solid #fd6; }
+
+.c-jisc-banner__jisc-login {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* [2] */
+  padding-right: 0.3rem;
+  /* [3] */
+  margin-right: -0.3rem;
+  /* [3] */
+  margin-left: 2.7rem;
+  text-align: right;
+  flex: 1 0; }
+  @media print {
+    .c-jisc-banner__jisc-login {
+      display: none; } }
+
+.c-jisc-banner__jisc-login-name-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  @media (min-width: 47.3125em) {
+    .c-jisc-banner__jisc-login-name-text {
+      clip: auto;
+      height: auto;
+      margin: auto;
+      overflow: unset;
+      position: static;
+      width: auto; } }
+
+/* ## Jisc logo
+ * ========================================================================== */
+.c-jisc-logo:focus {
+  outline: 0.3rem solid #fd6; }
+
+.c-jisc-logo:hover {
+  opacity: .7; }
+
+.c-jisc-logo__img {
+  height: .1rem;
+  width: .1rem; }
+  .c-jisc-logo__img--jisc-banner {
+    height: .1rem;
+    width: .1rem;
+    height: 2.7rem;
+    width: 2.7rem; }
+    @media (min-width: 47.3125em) {
+      .c-jisc-logo__img--jisc-banner {
+        height: .1rem;
+        width: .1rem;
+        height: 3.6rem;
+        width: 3.6rem; } }
+  .c-jisc-logo__img--jisc-focussed-masthead {
+    height: .1rem;
+    width: .1rem;
+    height: 3rem;
+    width: 3rem; }
+    @media (min-width: 47.3125em) {
+      .c-jisc-logo__img--jisc-focussed-masthead {
+        height: .1rem;
+        width: .1rem;
+        height: 3.6rem;
+        width: 3.6rem; } }
